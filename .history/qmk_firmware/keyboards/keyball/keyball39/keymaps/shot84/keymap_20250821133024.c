@@ -53,26 +53,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 };
 // clang-format on
 
-layer_state_t layer_state_set_user(layer_state_t state)
-{
-  // レイヤーが1または3の場合、スクロールモードが有効になる
-  keyball_set_scroll_mode(get_highest_layer(state) == 3);
-  // keyball_set_scroll_mode(get_highest_layer(state) == 1 || get_highest_layer(state) == 3);
-
-  // レイヤーとLEDを連動させる
-  uint8_t layer = biton32(state);
-  switch (layer)
-  {
-  case 4:
-      //rgblight_sethsv(HSV_WHITE);
-      rgb_matrix_mode_noeeprom(RGB_MATRIX_SOLID_COLOR);
-    break;
-
-  default:
-    //rgblight_sethsv(HSV_OFF);
-    rgb_matrix_reload_from_eeprom();
-  }
-  return state;
+layer_state_t layer_state_set_user(layer_state_t state) {
+    // Auto enable scroll mode when the highest layer is 3
+    keyball_set_scroll_mode(get_highest_layer(state) == 3);
+    return state;
 }
 
 #ifdef OLED_ENABLE
@@ -208,9 +192,3 @@ led_config_t g_led_config = {
         LED_FLAG_NONE,     // 46
         LED_FLAG_NONE      // 47
     }};
-
-    void keyboard_post_init_user(void) {
-  // Call the post init code.
-  rgb_matrix_reload_from_eeprom();
-}
-
