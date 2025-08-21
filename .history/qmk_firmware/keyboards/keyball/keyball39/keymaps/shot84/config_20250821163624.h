@@ -46,7 +46,6 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_DEFAULT_HUE 291
 #define RGB_MATRIX_DEFAULT_SAT 100
 #define RGB_MATRIX_DEFAULT_VAL 100
-#define RGB_MATRIX_DEFAULT_SPD 127
 
 #define RGB_MATRIX_FRAMEBUFFER_EFFECTS
 #define ENABLE_RGB_MATRIX_TYPING_HEATMAP
