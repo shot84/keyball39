@@ -44,7 +44,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define RGB_MATRIX_MAXIMUM_BRIGHTNESS 125
 
 #define RGB_MATRIX_DEFAULT_HUE 125
-#define RGB_MATRIX_DEFAULT_SAT 255
+#define RGB_MATRIX_DEFAULT_SAT 125
 #define RGB_MATRIX_DEFAULT_VAL 125
 #define RGB_MATRIX_DEFAULT_SPD 50
 
