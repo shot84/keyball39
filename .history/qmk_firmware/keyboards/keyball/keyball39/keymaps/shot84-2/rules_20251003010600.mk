@@ -11,7 +11,6 @@ AVR_USE_MINIMAL_PRINTF = yes   # printfを使う場合の軽量版（~数百B）
 # --- 必要機能 ---
 RGB_MATRIX_ENABLE     = yes
 POINTING_DEVICE_ENABLE= yes
-POINTING_DEVICE_DRIVER = pmw3360
 SPLIT_KEYBOARD        = yes
 OLED_ENABLE           = yes         # ご要望どおり有効のまま
 VIA_ENABLE          = yes          # ※未使用ならno推奨（1～2KB級の節約）
