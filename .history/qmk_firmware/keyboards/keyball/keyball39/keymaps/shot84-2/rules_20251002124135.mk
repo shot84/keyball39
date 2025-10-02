@@ -11,4 +11,4 @@ RGB_MATRIX_ENABLE = yes
 POINTING_DEVICE_ENABLE = yes
 SPLIT_KEYBOARD = yes
 # VIA/Vialを使うなら残す（使っていないなら no にすると縮む）
-VIA_ENABLE = yes
+# VIA_ENABLE = yes
