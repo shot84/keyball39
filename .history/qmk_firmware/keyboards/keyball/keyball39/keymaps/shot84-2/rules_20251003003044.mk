@@ -13,7 +13,7 @@ RGB_MATRIX_ENABLE     = yes
 POINTING_DEVICE_ENABLE= yes
 SPLIT_KEYBOARD        = yes
 OLED_ENABLE           = yes         # ご要望どおり有効のまま
-VIA_ENABLE          = no          # ※未使用ならno推奨（1～2KB級の節約）
+# VIA_ENABLE          = no          # ※未使用ならno推奨（1～2KB級の節約）
 
 # 他で使っていなければ
 # BOOTMAGIC_ENABLE   = no

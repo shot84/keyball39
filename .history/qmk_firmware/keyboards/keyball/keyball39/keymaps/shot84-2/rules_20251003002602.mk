@@ -1,0 +1,14 @@
+# サイズ削減
+LTO_ENABLE       = yes
+BOOTMAGIC_ENABLE = no
+CONSOLE_ENABLE   = no
+COMMAND_ENABLE   = no
+NKRO_ENABLE      = no
+AUDIO_ENABLE     = no
+EXTRAKEY_ENABLE  = yes
+MOUSEKEY_ENABLE  = yes
+VIA_ENABLE = yes
+
+# 一時的にOLEDを戻す（ビルド安定化のため）
+OLED_ENABLE  = yes
+OLED_DRIVER  = SSD1306

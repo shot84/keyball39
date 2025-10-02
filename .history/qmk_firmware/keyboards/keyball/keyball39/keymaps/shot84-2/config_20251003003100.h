@@ -35,4 +35,4 @@
 #endif
 #if !defined(NO_PRINT) && !defined(CONSOLE_ENABLE)
 #  define NO_PRINT
-#endif
+# endif
